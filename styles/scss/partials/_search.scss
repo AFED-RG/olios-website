@@ -34,7 +34,7 @@
         width: 100%;
         padding: 8px;
         font-size: 80px;
-        font-weight: map-get($font-weight, "thin");
+        font-weight: map-get($font-weight, "light");
 
         &:focus {
             outline: none;
