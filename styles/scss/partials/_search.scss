@@ -1,0 +1,84 @@
+@use './reset'as *;
+@use './colors'as *;
+@use './break-points'as *;
+@use './typography'as *;
+
+#search {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $white;
+    width: 100%;
+    z-index: 9;
+    padding: 100px 150px;
+    transform: translateX(-100%);
+    transition: all 0.3s ease-in-out;
+
+    .close-search-btn {
+        position: absolute;
+        right: 150px;
+        font-size: 30px;
+        color: $gray;
+        cursor: pointer;
+
+        &:hover {
+            color: $blue;
+        }
+    }
+
+    .search {
+        border: none;
+        border-bottom: 2px solid $gray;
+        width: 100%;
+        padding: 8px;
+        font-size: 80px;
+        font-weight: map-get($font-weight, "thin");
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .search-p {
+        margin-top: 10px;
+        color: $gray;
+        font-size: 25px;
+    }
+}
+
+#search.show-search {
+    transform: translateX(0);
+}
+
+@include tablet {
+    #search {
+        padding: 100px 50px 0 120px;
+
+        .close-search-btn {
+            position: absolute;
+            right: 50px;
+        }
+    }
+}
+
+@include mobile {
+    #search {
+        padding: 120px 30px;
+
+        .close-search-btn {
+            position: absolute;
+            right: 30px;
+            top: 90px;
+        }
+
+        .search {
+            font-size: 30px;
+        }
+
+        .search-p {
+            font-size: 20px;
+        }
+    }
+}

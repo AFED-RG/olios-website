@@ -1,0 +1,53 @@
+@use './colors'as *;
+@use './typography'as *;
+@use './buttons'as *;
+@use './break-points'as *;
+
+
+#home {
+    background-image: url('/assets/images/main-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+
+    .home-title {
+        font-size: 120px;
+        font-family: $lato-font;
+        font-weight: map-get($font-weight, "light");
+    }
+
+    .home-p {
+        font-size: 17px;
+        letter-spacing: 1px;
+    }
+
+    #view-more-btn {
+        margin-top: 20px;
+        font-weight: map-get($font-weight, "black");
+
+    }
+
+}
+
+
+@include mobile {
+    #home {
+        padding-top: 140px;
+
+        .home-title {
+            font-size: 90px;
+        }
+
+        .home-p {
+            font-size: 14px;
+        }
+    }
+}

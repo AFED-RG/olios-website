@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/images/olios-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/css/main.css">
+    <title>OLIOS - OFFICE</title>
+</head>
+
+<body>
+    <div class="left-sidebar">
+        <div class="left-sidebar-logo">
+            <a href="index.html"><img src="assets/images/olios-logo.png" alt="olios logo"></a>
+        </div>
+        <ul class="left-sidebar-menu">
+            <li class="left-sidebar-menu-item"><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+            <li class="left-sidebar-menu-item"><a href="#"><i class="fa-solid fa-basket-shopping"></i></a></li>
+            <li class="left-sidebar-menu-item"><a href="#" class="search-btn"><i
+                        class="fa-solid fa-magnifying-glass"></i></a></li>
+        </ul>
+        <div class="left-sidebar-sign-in">
+            <a href="#"><i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+        </div>
+    </div>
+
+    <div class="right-sidebar">
+        <button id="hamburger-menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="right-sidebar-menu">
+            <ul class="right-sidebar-menu-list">
+                <li class="right-sidebar-menu-item"><a href="living-room.html">LIVING ROOM <img
+                            src="assets/icons/living-room-icon.png" alt="living room icon"
+                            class="sidebar-menu-item-icon"></a></li>
+
+                <li class="right-sidebar-menu-item"><a href="office.html">OFFICE <img src="assets/icons/office-icon.png"
+                            alt="office icon" class="sidebar-menu-item-icon"></a></li>
+                <li class="right-sidebar-menu-item"><a href="for-kids.html">FOR KIDS <img
+                            src="assets/icons/for-kids-icon.png" alt="for kids icon" class="sidebar-menu-item-icon"></a>
+                </li>
+                <li class="right-sidebar-menu-item"><a href="kitchen.html">KITCHEN <img
+                            src="assets/icons/kitchen-icon.png" alt="kitchen icon" class="sidebar-menu-item-icon"></a>
+                </li>
+                <li class="right-sidebar-menu-item"><a href="accessories.html">ACCESSORIES <img
+                            src="assets/icons/accessories-icon.png" alt="accessories icon"
+                            class="sidebar-menu-item-icon"></a></li>
+            </ul>
+
+            <a href="#" id="show-all-accessories-btn">SHOW ALL ACCESSSORIES</a>
+        </div>
+    </div>
+
+    <div id="products-container">
+        <div class="products-header">
+            <h1 class="products-title">PRODUCTS</h1>
+            <label class="product-section-title">OFFICE <img src="assets/icons/office-icon.png" alt="office icon"
+                    class="product-section-icon"></label>
+        </div>
+        <div class="products-list">
+            <div class="product-item" data-aos="fade-up" data-aos-duration="1500">
+                <div class="product-img">
+                    <img src="assets/products/red-seat.png" alt="red seat">
+                </div>
+                <div class="product-label">
+                    <h1 class="product-title">RED SEAT</h1>
+                    <p class="product-desc">Lorem ipsum dolor sit amet</p>
+                    <p class="product-price">$45</p>
+                </div>
+            </div>
+
+            <div class="product-item" data-aos="fade-up" data-aos-duration="1500">
+                <div class="product-img">
+                    <img src="assets/products/white-table.png" alt="white table">
+                </div>
+                <div class="product-label">
+                    <h1 class="product-title">WHITE TABLE</h1>
+                    <p class="product-desc">Lorem ipsum dolor sit amet</p>
+                    <p class="product-price">$350</p>
+                </div>
+            </div>
+
+            <div class="product-item" data-aos="fade-up" data-aos-duration="1500">
+                <div class="product-img">
+                    <img src="assets/products/blue-seat.png" alt="blue seat">
+                </div>
+                <div class="product-label">
+                    <h1 class="product-title">BLUE SEAT</h1>
+                    <p class="product-desc">Lorem ipsum dolor sit amet</p>
+                    <p class="product-price">$35</p>
+                </div>
+            </div>
+
+            <div class="product-item" data-aos="fade-up" data-aos-duration="1500">
+                <div class="product-img">
+                    <img src="assets/products/modern-bed.png" alt="modern bed">
+                </div>
+                <div class="product-label">
+                    <h1 class="product-title">MODERN SEAT</h1>
+                    <p class="product-desc">Lorem ipsum dolor sit amet</p>
+                    <p class="product-price">$45</p>
+                </div>
+            </div>
+
+            <div class="product-item" data-aos="fade-up" data-aos-duration="1500">
+                <div class="product-img">
+                    <img src="assets/products/dark-seat.png" alt="dark seat">
+                </div>
+                <div class="product-label">
+                    <h1 class="product-title">DARK SEAT</h1>
+                    <p class="product-desc">Lorem ipsum dolor sit amet</p>
+                    <p class="product-price">$45</p>
+                </div>
+            </div>
+        </div>
+
+        <a href="#" class="show-more-products">SHOW MORE PRODUCTS</a>
+    </div>
+
+    <div id="search">
+        <a href="#" class="close-search-btn"><i class="fa-solid fa-xmark"></i></a>
+        <input type="text" class="search">
+        <p class="search-p">Type product that you are looking for</p>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

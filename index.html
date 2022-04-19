@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/images/olios-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/css/main.css">
+    <title>OLIOS - HOMEPAGE</title>
+</head>
+
+<body>
+    <div class="left-sidebar">
+        <div class="left-sidebar-logo">
+            <a href="index.html"><img src="assets/images/olios-logo.png" alt="olios logo"></a>
+        </div>
+        <ul class="left-sidebar-menu">
+            <li class="left-sidebar-menu-item"><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+            <li class="left-sidebar-menu-item"><a href="#"><i class="fa-solid fa-basket-shopping"></i></a></li>
+            <li class="left-sidebar-menu-item"><a href="#" class="search-btn"><i
+                        class="fa-solid fa-magnifying-glass"></i></a></li>
+        </ul>
+        <div class="left-sidebar-sign-in">
+            <a href="#"><i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+        </div>
+    </div>
+
+    <div class="right-sidebar">
+        <button id="hamburger-menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="right-sidebar-menu">
+            <ul class="right-sidebar-menu-list">
+                <li class="right-sidebar-menu-item"><a href="living-room.html">LIVING ROOM <img
+                            src="assets/icons/living-room-icon.png" alt="living room icon"
+                            class="sidebar-menu-item-icon"></a></li>
+
+                <li class="right-sidebar-menu-item"><a href="office.html">OFFICE <img src="assets/icons/office-icon.png"
+                            alt="office icon" class="sidebar-menu-item-icon"></a>
+                </li>
+                <li class="right-sidebar-menu-item"><a href="for-kids.html">FOR KIDS <img
+                            src="assets/icons/for-kids-icon.png" alt="for kids icon" class="sidebar-menu-item-icon"></a>
+                </li>
+                <li class="right-sidebar-menu-item"><a href="kitchen.html">KITCHEN <img
+                            src="assets/icons/kitchen-icon.png" alt="kitchen icon" class="sidebar-menu-item-icon"></a>
+                </li>
+                <li class="right-sidebar-menu-item"><a href="accessories.html">ACCESSORIES <img
+                            src="assets/icons/accessories-icon.png" alt="accessories icon"
+                            class="sidebar-menu-item-icon"></a></li>
+            </ul>
+
+            <a href="#" id="show-all-accessories-btn">SHOW ALL ACCESSSORIES</a>
+        </div>
+    </div>
+
+    <div id="home">
+        <h1 class="home-title" data-aos="fade-down" data-aos-duration="2500">OLIOS</h1>
+        <p class="home-p" data-aos="fade-down" data-aos-duration="2000">NEWEST FURNITURE SHOP TEMPLATE</p>
+        <a href="#" id="view-more-btn" class="btn" data-aos="fade-down" data-aos-duration="1500">VIEW MORE</a>
+    </div>
+
+    <div id="search">
+        <a href="#" class="close-search-btn"><i class="fa-solid fa-xmark"></i></a>
+        <input type="text" class="search">
+        <p class="search-p">Type product that you are looking for</p>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
