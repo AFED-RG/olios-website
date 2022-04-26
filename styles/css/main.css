@@ -156,7 +156,7 @@ ul {
 }
 
 #home {
-  background-image: url("/olios-website/assets/images/main-background.jpg");
+  background-image: url("https://ricardo-l-garcia.github.io/olios-website/assets/images/main-background.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
